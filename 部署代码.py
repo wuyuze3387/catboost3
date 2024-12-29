@@ -18,24 +18,23 @@ model = joblib.load('CatBoost.pkl')
 
 # 特征范围定义（根据提供的特征范围和数据类型）
 feature_ranges = {
-    "Intrapartum_pain": {"type": "numerical", "min": 0, "max": 10, "default": 5},
-    "Postpartum_pain": {"type": "numerical", "min": 0, "max": 10, "default": 5},
+    "Intrapartum pain": {"type": "numerical", "min": 0, "max": 10, "default": 5},
+    "Postpartum pain": {"type": "numerical", "min": 0, "max": 10, "default": 5},
     "Resilience": {"type": "numerical", "min": 6, "max": 30, "default": 18},
-    "Family_support": {"type": "numerical", "min": 0, "max": 10, "default": 5},
-    "Psychological_birth_trauma": {"type": "numerical", "min": 0, "max": 42, "default": 14},
+    "Family support": {"type": "numerical", "min": 0, "max": 10, "default": 5},
+    "Psychological birth trauma": {"type": "numerical", "min": 0, "max": 42, "default": 14},
     "Age": {"type": "categorical", "options": [1, 2]},
     "Occupation": {"type": "categorical", "options": [1, 2]},
-    "Method_of_delivery": {"type": "categorical", "options": [1, 2]},
-    "Marital_status": {"type": "categorical", "options": [1, 2]},
-    "Educational_degree": {"type": "categorical", "options": [1, 2]},
-    "Average_monthly_household_income": {"type": "categorical", "options": [1, 2]},
-    "Medical_insurance": {"type": "categorical", "options": [1, 2]},
-    "Mode_of_conception": {"type": "categorical", "options": [1, 2]},
-    "Pregnancy_complications": {"type": "categorical", "options": [1, 2]},
+    "Method of delivery": {"type": "categorical", "options": [1, 2]},
+    "Marital status": {"type": "categorical", "options": [1, 2]},
+    "Educational degree": {"type": "categorical", "options": [1, 2]},
+    "Average monthly household income": {"type": "categorical", "options": [1, 2]},
+    "Medical insurance": {"type": "categorical", "options": [1, 2]},
+    "Mode of conception": {"type": "categorical", "options": [1, 2]},
+    "Pregnancy complications": {"type": "categorical", "options": [1, 2]},
     "Breastfeeding": {"type": "categorical", "options": [1, 2]},
-    "Rooming_in": {"type": "categorical", "options": [1, 2]},
+    "Rooming in": {"type": "categorical", "options": [1, 2]},
 }
-
 # Streamlit 界面
 st.title("Prediction Model with SHAP Visualization")
 
