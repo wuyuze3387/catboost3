@@ -34,6 +34,7 @@ feature_ranges = {
     "Pregnancy complications": {"type": "categorical", "options": [1, 2]},
     "Breastfeeding": {"type": "categorical", "options": [1, 2]},
     "Rooming in": {"type": "categorical", "options": [1, 2]},
+    "Planned pregnancy": {"type": "categorical", "options": [1, 2]},
 }
 
 # Streamlit 界面
